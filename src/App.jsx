@@ -8,17 +8,17 @@ import useCountdown from './hooks/useCountdown'
 import './App.css'
 
 function App() {
-  const x = useCountdown("2024-10-23T19:00:00")
+  const [day, hour, minute, second] = useCountdown("2024-10-23T19:00:00")
 
   return (
     <div className="App" style={{backgroundImage: `url(${Imagem})`}}>
       <div className='container'>
-        <Title title="Contagem regressiva" />
+        <Title title="Contagem regressiva para o boteco do Hermes" />
         <div className="countdown-container">
-          <Counter title="Dias" number={2} />
-          <Counter title="Horas" number={2} />
-          <Counter title="Minutos" number={2} />
-          <Counter title="Segundos" number={2} />
+          <Counter title="Dias" number={day} />
+          <Counter title="Horas" number={hour} />
+          <Counter title="Minutos" number={minute} />
+          <Counter title="Segundos" number={second} />
         </div>
       </div>
     </div>
