@@ -4,7 +4,7 @@ import { useContext } from 'react'
 
 import { CountdownContext } from './context/CountdownContext'
 
-import Imagem from './assets/aniversario.jpg'
+import Imagem from './assets/imagem.jpeg'
 
 import './App.css'
 
